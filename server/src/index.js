@@ -15,5 +15,6 @@ app.use(express.json())
 app.use(cors())
 
 app.use('/auth', userRouter)
+app.use('/recipes', recipesRouter)
 
 app.listen(3002, () => console.log('Server Started'))
